@@ -1,0 +1,23 @@
+/*
+    This file is for resources such as fonts.
+*/
+
+@font-face {
+    font-family: Righteous;
+    src: url("../fonts/Righteous-Regular.ttf");
+}
+
+@font-face {
+    font-family: Shrikhand;
+    src: url("../fonts/Shrikhand-Regular.ttf");
+}
+
+@font-face {
+    font-family: mplus-regular;
+    src: url("../fonts/MPLUSRounded1c-Regular.ttf");
+}
+
+@font-face {
+    font-family: mplus-medium;
+    src: url("../fonts/MPLUSRounded1c-Medium.ttf");
+}

@@ -1,0 +1,167 @@
+/*
+    This file is for the welcome "tile", at the top of the home page.
+*/
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: fadeInAnimation ease-in 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes popAnimation {
+    0% {
+        transform: scale(0.1);
+    }
+    70% {
+        transform: scale(1.05);
+    }
+    80% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.homeTile {
+    position: relative;
+    text-align: center;
+    width: 50%;
+    padding-top: 50%;
+    margin: auto auto 2%;
+    background-image: url("../images/Home Tile Background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0 0 5% 5%;
+    box-shadow: 0 0 1.5vw 0.7vw #E1D7CE;
+}
+
+.welcomeLabel {
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    bottom: 73%;
+    right: 10%;
+    left: 10%;
+    border-radius: 2vw;
+
+    background: #F4F1E7;
+    box-shadow: 0 0.3vw 1vw rgba(0, 0, 0, 0.25);
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.welcomeLabel > h1 {
+    font-family: Righteous, Arial;
+    color: #454545;
+    font-size: 5vw;
+}
+
+.aboutMeLabel {
+    position: absolute;
+    white-space: nowrap;
+
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+
+    z-index: 2;
+    top: 75%;
+    right: 30%;
+    left: 30%;
+    border-radius: 2vw;
+    background: #F4F1E7;
+    box-shadow: 0 0.3vw 1vw rgba(0, 0, 0, 0.25);
+}
+
+.aboutMeLabel > h3 {
+    font-family: Righteous, Arial;
+    color: #454545;
+    font-size: 3vw;
+    padding: 5% 15% 5% 15%;
+}
+
+.aboutMeArrow {
+    pointer-events: bounding-box;
+    position: absolute;
+    top: 30%;
+    animation: bobAnimation 10s ease-in-out 0s;
+    animation-iteration-count: infinite;
+    filter: drop-shadow(0 0.7vw 0.5vw rgba(0, 0, 0, 0.4));
+}
+
+@keyframes bobAnimation {
+    0%,
+    100% {
+        transform: translateY(0) scale(0.22, 0.22);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateY(-0.3vw) scale(0.22, 0.22);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateY(0.3vw) scale(0.22, 0.22);
+    }
+
+    80% {
+        transform: translateY(0.24vw) scale(0.22, 0.22);
+    }
+
+    90% {
+        transform: translateY(-0.24vw) scale(0.22, 0.22);
+    }
+}
+
+.titleCircle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 50%;
+    background: #69A3AB;
+    top: 21.5%;
+    bottom: 22.5%;
+    left: 22%;
+    right: 22%;
+    border: 1vw solid #4E8289;
+    box-sizing: border-box;
+
+    animation: popAnimation ease-in-out 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.titleCircle > h2 {
+    line-height: 110%;
+    font-family: Shrikhand, Arial;
+    color: #EEEEEE;
+    font-size: 4vw;
+}

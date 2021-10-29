@@ -1,0 +1,211 @@
+/*
+    This file is for the "About Me" section of the home page.
+*/
+
+.aboutMeTile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #69A3AB;
+    position: relative;
+    width: 50%;
+    margin: auto;
+    padding-top: 50%;
+    border-radius: 5% 5% 5% 5%;
+    box-shadow: 0 0 1.5vw 0.7vw #E1D7CE;
+
+}
+
+.aboutMeTextBackground {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: #EEEEEE;
+    border: 0.5vw solid #4E8289;
+    border-radius: 1vw;
+    height: 90%;
+    width: 60%;
+    box-shadow: 0 0 0.5vw 0.2vw rgba(0, 0, 0, 0.15);
+    z-index: 3;
+
+    /* Not sure why this margin needs to be here,
+    but without it the box isn't centered vertically. */
+    margin-bottom: 100%;
+}
+
+.aboutMeTextBackground > h2 {
+
+    position: absolute;
+    line-height: 110%;
+    font-family: Shrikhand, Arial, serif;
+    color: #454545;
+    font-size: 3vw;
+    padding: 4%;
+
+}
+
+.aboutMeTextBackground > p:nth-of-type(1) {
+    text-align: left;
+    width: 90%;
+    position: absolute;
+    font-family: mplus-medium, Arial, sans-serif;
+    color: #454545;
+    font-size: 1.5vw;
+    top: 15%;
+    left: 5%;
+
+}
+
+.aboutMeTextBackground > p:nth-of-type(2) {
+    text-align: left;
+    width: 90%;
+    position: absolute;
+    font-family: mplus-regular, Arial, sans-serif;
+    color: #454545;
+    line-height: 150%;
+    font-size: 1.5vw;
+    top: 20%;
+
+}
+
+.aboutMeWrapper {
+    position: absolute;
+    width: 100%;
+}
+
+/* POP OUTS START */
+@keyframes popOutLeft {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: 18%;
+    }
+}
+
+@keyframes popOutRight {
+    0% {
+        margin-right: 0;
+    }
+    100% {
+        margin-right: 18%;
+    }
+}
+
+.popOutWrapper {
+    /* need this wrapper for float to work
+     on the pop outs. */
+    position: absolute;
+    width: 100%;
+}
+
+.popOut {
+    z-index: 2;
+    background-color: #FFAC60;
+    width: 18%;
+    position: relative;
+}
+
+.topLeftPopOut {
+    animation: popOutLeft ease-in-out 1s;
+    animation-delay: 0.1s;
+    animation-play-state: paused;
+    /* animation-fill-mode: forwards; makes the animation stop
+    on the last frame, so it doesn't reset. */
+    animation-fill-mode: forwards;
+    margin-top: 5%;
+    padding-top: 15%;
+    margin-left: 0;
+    border-radius: 1vw;
+}
+
+.bottomLeftPopOut {
+    animation: popOutLeft ease-in-out 1s;
+    animation-delay: 0.1s;
+    animation-play-state: paused;
+    /* animation-fill-mode: forwards; makes the animation stop
+    on the last frame, so it doesn't reset. */
+    animation-fill-mode: forwards;
+    margin-top: 10%;
+    padding-top: 15%;
+    margin-left: 0;
+    border-radius: 1vw;
+}
+
+.middleRightPopOut {
+    animation: popOutRight ease-in-out 1s;
+    animation-delay: 0.1s;
+    animation-play-state: paused;
+    /* animation-fill-mode: forwards; makes the animation stop
+    on the last frame, so it doesn't reset. */
+    animation-fill-mode: forwards;
+    float: right;
+    padding-top: 15%;
+    margin-top: -27.5%;
+    margin-right: 0;
+    border-radius: 1vw;
+}
+
+.popOutLineTop {
+    top: 10%;
+}
+
+.popOutLineBottom {
+    bottom: 10%;
+}
+
+.popOutLine {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    background-color: #FAD9BA;
+}
+
+/* POP OUTS END */
+
+
+@keyframes arrowGrow {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.arrowBody {
+    animation: arrowGrow ease-in-out 2s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    animation-delay: 0.7s;
+}
+
+.arrowHead {
+
+    animation: arrowGrow ease-in-out 1s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+.leftArrow {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+
+    z-index: 3;
+    padding-bottom: 100%;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    padding-right: 70%;
+}
+
+.rightArrow {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+
+    z-index: 3;
+    padding-bottom: 150%;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    padding-left: 70%;
+}

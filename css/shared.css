@@ -1,0 +1,41 @@
+/*
+    This file is for CSS shared between the following stylesheets:
+    welcomeTile.css
+    aboutMeTile.css
+*/
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    background: #EEEEEE;
+}
+
+.border-left {
+    /* position: relative needs to be here for z-index to work. */
+    position: relative;
+    z-index: 3;
+    width: 20%;
+    height: 100%;
+    background: #D1A378;
+    float: left;
+}
+
+.border-right {
+    position: relative;
+    z-index: 3;
+    width: 20%;
+    height: 100%;
+    background: #D1A378;
+    float: right;
+}
+
+/*
+@media screen and (max-width: 1200px) {
+    .border-left {
+        visibility: collapse;
+    }
+    .border-right {
+        visibility: collapse;
+    }
+}*/

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jack Allpike</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/resources.css">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/welcomeTile.css">
+    <link rel="stylesheet" href="css/aboutMeTile.css">
+</head>
+<body>
+    <script src="js/popOutAnimationTrigger.js"></script>
+
+    <main class="background">
+        <div class="border-left"></div>
+        <div class="border-right"></div>
+
+        <!-- HOME TILE START -->
+        <section class="homeTile">
+
+            <div class="welcomeLabel"><h1>Welcome!</h1></div>
+            <div class="titleCircle"><h2>I'm<br/>Jack.</h2></div>
+
+            <div class="aboutMeLabel">
+                <h3>About Me</h3>
+                <!-- Down Arrow -->
+                <svg class="aboutMeArrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99 70" fill="none">
+                    <a class="arrowScroll" href="#aboutMeTile">
+                        <path d="M9 9L49 25M90 9L50 25M9 45L49 61M90 45L50 61" stroke="#F7F7F7" stroke-opacity="0.6" stroke-width="16" stroke-linecap="round"/>
+                        <path d="M9 9L49 25M90 9L50 25M9 45L49 61M90 45L50 61" stroke="#F7F7F7" stroke-opacity="0.6" stroke-width="16" stroke-linecap="round"/>
+                    </a>
+                </svg>
+            </div>
+        </section>
+        <!-- HOME TILE END -->
+
+
+        <!-- ABOUT ME TILE START -->
+        <section class="aboutMeWrapper">
+
+            <div class="popOutWrapper">
+                <aside class="popOut topLeftPopOut">
+                    <div class="popOutLine popOutLineBottom"></div>
+                    <div class="popOutLine popOutLineTop"></div>
+                </aside>
+
+                <aside class="popOut bottomLeftPopOut">
+                    <div class="popOutLine popOutLineBottom"></div>
+                    <div class="popOutLine popOutLineTop"></div>
+                </aside>
+
+                <aside class="popOut middleRightPopOut">
+                    <div class="popOutLine popOutLineBottom"></div>
+                    <div class="popOutLine popOutLineTop"></div>
+                </aside>
+            </div>
+
+            <section id="aboutMeTile" class="aboutMeTile">
+
+                <svg class="leftArrow" viewBox="0 0 313 194" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="arrowBody" d="M302.285 169.706C163.361 123.088 12.5264 298.613 48.3578 24.0475" stroke="#EEF1F2" stroke-width="21" stroke-linecap="round"/>
+                    <path class="arrowHead" d="M50.8685 11.2825 L78.5553 54.0962 M50.5153 11.2271 L10.8702 46.5036 " stroke="#EEF1F2" stroke-width="21" stroke-linecap="round"/>
+                </svg>
+
+                <svg class="rightArrow" viewBox="0 0 256 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="arrowBody" d="M11.1803 17.0567C89.6906 0.940147 238.041 6.66654 203.362 158.505" stroke="#EEF1F2" stroke-width="21" stroke-linecap="round"/>
+                    <path class="arrowHead" d="M204.331 158.062 L244.95 131.39 M202.698 158.649 L172.306 120.733" stroke="#EEF1F2" stroke-width="21" stroke-linecap="round"/>
+                </svg>
+
+                <article class="aboutMeTextBackground">
+                    <h2>Who Am I?</h2>
+                    <p>Hi, I'm Jack Allpike!</p>
+                    <p>I'm an aspiring Software Developer,<br/>
+                        and hobbyist Musician.
+                        <br/>
+                        <br/>
+                        I'm 19, and from Perth, WA! <br/>
+                        My entire life I've had a thriving interest
+                        in technology, leading me to decide at a
+                        young age that was the career path
+                        I wanted to go down.
+                    </p>
+                </article>
+            </section>
+
+        </section>
+
+        <!-- ABOUT ME TILE END -->
+
+    </main>
+</body>
+</html>
