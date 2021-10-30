@@ -2,11 +2,6 @@
     This file is for the welcome "tile", at the top of the home page.
 */
 
-
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     animation: fadeInAnimation ease-in 0.2s;
     animation-iteration-count: 1;
