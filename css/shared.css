@@ -43,27 +43,33 @@ html {
     z-index: 4;
     display: flex;
     justify-content: center;
+    left: -27.24vw;
     align-items: center;
 }
 
 .dropButton {
+
     display: flex;
     justify-content: center;
-    align-items: center;
 
     margin-top: -0.8vw;
+    background-image: url("../images/Dropdown Box.svg");
+    background-size: 5vw 3vw;
+    background-repeat: no-repeat;
     width: 5vw;
     height: 3vw;
-    background-color: #69A3AB;
-    border: #4E8289 solid 0.4vw;
-    border-radius: 0 0 1vw 1vw;
+    background-color: transparent;
+    border: none;
 }
+
 
 .dropArrow {
     position: absolute;
     top: -10%;
     width: 2.5vw;
     height: 2.5vw;
+    z-index: 1;
+    pointer-events: none;
 }
 
 /*
