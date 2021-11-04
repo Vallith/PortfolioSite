@@ -36,48 +36,23 @@ html {
     right: 0;
 }
 
-.dropDownWrapper {
-    top: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 4;
-    display: flex;
-    justify-content: center;
-    left: -27.24vw;
-    align-items: center;
-}
-
-.dropButton {
-
-    display: flex;
-    justify-content: center;
-
-    margin-top: -0.8vw;
-    background-image: url("../images/Dropdown Box.svg");
-    background-size: 5vw 3vw;
-    background-repeat: no-repeat;
-    width: 5vw;
-    height: 3vw;
-    background-color: transparent;
-    border: none;
-}
-
-
-.dropArrow {
+nav {
+    z-index: 3;
+    top: 1vh;
     position: absolute;
-    top: -10%;
-    width: 2.5vw;
-    height: 2.5vw;
-    z-index: 1;
-    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 19.6vw;
+    width: 5vw;
 }
 
-/*
-@media screen and (max-width: 1200px) {
-    .border-left {
-        visibility: collapse;
-    }
-    .border-right {
-        visibility: collapse;
-    }
-}*/
+nav > ul {
+    z-index: 3;
+}
+.homeIcon {
+    display: inline-block;
+    background-image: url("../images/Home-icon.svg");
+    height: 3vw;
+    width: 3vw;
+}
