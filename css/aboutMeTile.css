@@ -204,3 +204,39 @@
     height: 20%;
     padding-left: 70%;
 }
+
+.worksBackground {
+    position: absolute;
+    background-color: #69A3AB;
+    width: 70%;
+    height: 12%;
+    top: 80%;
+    border: 0.3vw solid #4E8289;
+    border-radius: 1.5vw;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+}
+
+.worksBackground:hover .myWorksArrow {
+    transform: translateX(0.5vw);
+}
+
+.myWorksArrow {
+    position: relative;
+    height: 45%;
+    left: 80%;
+    filter: drop-shadow(0 0.3vw 0.2vw rgba(0, 0, 0, 0.2));
+    transition: transform 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+.myWorksLabel {
+    position: absolute;
+    font-family: Righteous, Arial, sans-serif;
+    color: #EEEEEE;
+    font-size: 2.6vw;
+    padding-left: 15%;
+}

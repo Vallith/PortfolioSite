@@ -2,21 +2,6 @@
     This file is for the welcome "tile", at the top of the home page.
 */
 
-body {
-    animation: fadeInAnimation ease-in 0.2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 @keyframes popAnimation {
     0% {
         transform: scale(0.1);
@@ -67,7 +52,7 @@ body {
 }
 
 .welcomeLabel > h1 {
-    font-family: Righteous, Arial;
+    font-family: Righteous, Arial, sans-serif;
     color: #454545;
     font-size: 5vw;
 }
@@ -91,7 +76,7 @@ body {
 }
 
 .aboutMeLabel > h3 {
-    font-family: Righteous, Arial;
+    font-family: Righteous, Arial, sans-serif;
     color: #454545;
     font-size: 3vw;
     padding: 5% 15% 5% 15%;
@@ -156,7 +141,7 @@ body {
 
 .titleCircle > h2 {
     line-height: 110%;
-    font-family: Shrikhand, Arial;
+    font-family: Shrikhand, Arial, sans-serif;
     color: #EEEEEE;
     font-size: 4vw;
 }
