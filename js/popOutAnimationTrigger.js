@@ -1,6 +1,4 @@
 
-window.onload = Setup;
-
 let topLeft;
 let bottomLeft;
 let middleRight;
@@ -11,7 +9,7 @@ let leftArrowHead;
 let rightArrowBody;
 let rightArrowHead;
 
-function Setup() {
+var PopOutSetup = function() {
 
     console.log("Running Setup...");
     topLeft = document.getElementsByClassName("topLeftPopOut")[0];

@@ -1,10 +1,8 @@
 
-window.onload = Setup;
-
 let body;
 let myWorks;
 
-function Setup()
+var PageFadeSetup = function()
 {
     console.log("Running Page Animation Setup")
     body = document.getElementsByTagName("body")[0];

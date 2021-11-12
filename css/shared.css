@@ -59,24 +59,3 @@ body {
     bottom: 0;
     right: 0;
 }
-
-nav {
-    z-index: 3;
-    top: 1vh;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 19.6vw;
-    width: 5vw;
-}
-
-nav > ul {
-    z-index: 3;
-}
-.homeIcon {
-    display: inline-block;
-    background-image: url("../images/Home-icon.svg");
-    height: 3vw;
-    width: 3vw;
-}
