@@ -1,0 +1,63 @@
+/*
+    This file is for CSS shared between the following stylesheets:
+    welcomeTile.css
+    aboutMeTile.css
+
+    Used in index.html
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: fadeInAnimation ease-in 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.background {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    background: #EEEEEE;
+}
+
+.border-left {
+    /* position: relative needs to be here for z-index to work. */
+    position: absolute;
+    z-index: 3;
+    width: 20%;
+    background: #D1A378;
+    bottom: 0;
+    top: 0;
+    left: 0;
+}
+
+.border-right {
+    position: absolute;
+    z-index: 3;
+    width: 20%;
+    background: #D1A378;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}

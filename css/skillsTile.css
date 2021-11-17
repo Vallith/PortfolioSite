@@ -1,0 +1,82 @@
+
+h1 {
+    font-family: Shrikhand, Arial, sans-serif;
+    font-size: 5vw;
+    color: #EEEEEE;;
+}
+
+.skillsTile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #69A3AB;
+    position: relative;
+    width: 84%;
+    margin: auto;
+    padding-top: 50%;
+    border-radius: 0 0 6vw 6vw;
+    box-shadow: 0 0 1.5vw 0.7vw #E1D7CE;
+    border: 0.5vw solid #4E8289;
+    box-sizing: border-box;
+}
+
+.skillsLabel {
+    position: absolute;
+    bottom: 80%;
+    background-color: #4E8289;
+    padding: 1.5vw 5vw 1.5vw 5vw;
+    border-radius: 2vw;
+}
+
+.asideWrapper {
+    overflow: hidden;
+}
+
+.sharedAside {
+    position: relative;
+    margin-top: 5vw;
+    z-index: 4;
+    background-color: #EEEEEE;
+    border: 2vw solid;
+    height: 40vw;
+    width: 80vw;
+}
+
+@keyframes leftAsideOut {
+    0% {
+        left: -75vw;
+    }
+    100% {
+        left: -2vw;
+    }
+
+}
+
+@keyframes rightAsideOut {
+    0% {
+        right: -75vw;
+    }
+    100% {
+        right: -2vw;
+    }
+}
+
+.leftAside {
+    animation: leftAsideOut ease-in-out 0.75s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    left: -75vw;
+    border-radius: 0 3vw 3vw 0;
+    border-color: #FFAC60;
+}
+
+.rightAside {
+    animation: rightAsideOut ease-in-out 0.75s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    border-radius: 3vw 0 0 3vw;
+    border-color: #4E8289;
+    float: right;
+    right: -75vw;
+}

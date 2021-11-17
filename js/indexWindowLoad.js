@@ -4,7 +4,8 @@ window.onload = Load;
 // Container function for all onload events
 function Load()
 {
-    console.log("windowLoad.js Load()")
+    console.log("indexWindowLoad.js Load()")
     PageFadeSetup();
-    PopOutSetup();
+    AboutPopOutSetup();
+    WorksPopOutSetup();
 }
