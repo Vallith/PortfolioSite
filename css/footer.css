@@ -1,0 +1,92 @@
+
+footer {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FFAC60;
+    position: relative;
+    margin: auto;
+	width: 50%;
+	margin-top: 3vw;
+	padding: 1.5vw 0 1.5vw 0;
+	border-radius: 3vw 3vw 0 0;
+}
+
+.indexFooter {
+}
+
+.worksFooter {
+}
+
+.footerItem {
+	font-family: Righteous, Arial, sans-serif;
+	text-decoration: none;
+	color: #454545;
+	font-size: 2vw;
+}
+
+.contactItem {
+	font-family: Righteous, Arial, sans-serif;
+	color: #454545;
+	font-size: 2vw;
+	padding-top: 1vw;
+}
+
+.exclude {
+	/* used to exclude an item inside of footerList
+	from being changed when hovered over. */
+}
+
+.footerLink:focus {
+	color: #606060;
+}
+
+.footerList {
+	line-height: 1.8vw;
+	list-style-type: none;
+}
+
+.footerList > li {
+	text-align: center;
+	transition: transform 0.2s ease-in-out;
+}
+
+.footerList > li:not(.exclude):hover {
+	transform: scale(1.2);
+}
+
+.footerTitleText {
+	font-family: Shrikhand, Arial, sans-serif;
+	color: #454545;
+	font-size: 2vw;
+	position: absolute;	
+}
+
+.emailText {
+	left: 2.2vw;
+	top: 3vw;
+	transform: rotate(-25deg);
+}
+
+.pagesText {
+	right: 2.2vw;
+	bottom: 2vw;
+	transform: rotate(-20deg);
+}
+
+.emailArrow {
+	position: absolute;
+	width: 7vw;
+	left: 6vw;
+	bottom: 1vw;
+	transform: rotate(-4deg);
+}
+
+.pagesArrow {
+	position: absolute;
+	width: 10vw;
+	right: 8vw;
+	top: 1.5vw;
+	transform: rotate(-8deg);
+}
