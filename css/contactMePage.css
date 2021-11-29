@@ -1,0 +1,65 @@
+
+
+.contactMeTile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #69A3AB;
+    position: relative;
+    padding-top: 14vw;
+    padding-bottom: 10vw;
+    width: 84%;
+    margin: auto;
+    border-radius: 0 0 6vw 6vw;
+    box-shadow: 0 0 1.5vw 0.7vw #E1D7CE;
+    border: 0.5vw solid #4E8289;
+    box-sizing: border-box;
+}
+
+.titleHeader {
+    position: absolute;
+    color: #EEEEEE;
+    font-family: Shrikhand, Arial, sans-serif;
+    font-size: 6vw;
+    top: 3vw;
+}
+
+.formLabel {
+    font-family: Righteous, Arial, sans-serif;
+    color: #EEEEEE;
+    font-size: 3vw;
+}
+
+.formInput {
+    background-color: #FFAC60;
+    border: 0.5vw solid #FAD9BA;
+    border-radius: 1vw;
+    padding: 1vw 1vw 1vw 2vw;
+    width: 40vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: mplus-medium, Arial, sans-serif;
+    outline: none;
+}
+
+.message {
+    height: 18vw;
+    resize: none;
+}
+
+.formSubmit {
+    float: right;
+    padding: 1vw 3vw 1vw 3vw;
+    background-color: #FFAC60;
+    border: 0.5vw solid #FAD9BA;
+    border-radius: 1vw;
+    font-family: mplus-medium, Arial, sans-serif;
+    font-size: 1.5vw;
+    transition: transform 0.2s ease-in-out;
+}
+
+.formSubmit:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}

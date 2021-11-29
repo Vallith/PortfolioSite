@@ -69,6 +69,9 @@ h1 {
     left: -75vw;
     border-radius: 0 3vw 3vw 0;
     border-color: #FFAC60;
+
+    display: flex;
+    align-items: center;
 }
 
 .rightAside {
@@ -79,4 +82,19 @@ h1 {
     border-color: #4E8289;
     float: right;
     right: -75vw;
+
+    display: flex;
+    align-items: center;
+}
+
+.leftImage {
+    position: absolute;
+    right: 5vw;
+    height: 30vw;
+}
+
+.rightImage {
+    position: absolute;
+    left: 5vw;
+    height: 30vw;
 }

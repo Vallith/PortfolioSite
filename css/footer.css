@@ -6,11 +6,12 @@ footer {
 
     background-color: #FFAC60;
     position: relative;
-    margin: auto;
 	width: 50%;
-	margin-top: 3vw;
+	margin: 3vw auto auto;
 	padding: 1.5vw 0 1.5vw 0;
 	border-radius: 3vw 3vw 0 0;
+	border: 0.5vw solid #FAD9BA;
+	border-bottom: 0;
 }
 
 .indexFooter {
@@ -26,11 +27,11 @@ footer {
 	font-size: 2vw;
 }
 
-.contactItem {
+.authorItem {
 	font-family: Righteous, Arial, sans-serif;
 	color: #454545;
-	font-size: 2vw;
-	padding-top: 1vw;
+	font-size: 1vw;
+	padding-top: 1.5vw;
 }
 
 .exclude {
@@ -43,7 +44,7 @@ footer {
 }
 
 .footerList {
-	line-height: 1.8vw;
+	line-height: 1.6vw;
 	list-style-type: none;
 }
 
@@ -64,9 +65,9 @@ footer {
 }
 
 .emailText {
-	left: 2.2vw;
+	left: 3vw;
 	top: 3vw;
-	transform: rotate(-25deg);
+	transform: rotate(-20deg);
 }
 
 .pagesText {
@@ -77,10 +78,10 @@ footer {
 
 .emailArrow {
 	position: absolute;
-	width: 7vw;
-	left: 6vw;
-	bottom: 1vw;
-	transform: rotate(-4deg);
+	width: 8vw;
+	left: 11vw;
+	bottom: 4vw;
+	transform: rotate(-13deg);
 }
 
 .pagesArrow {
